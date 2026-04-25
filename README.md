@@ -44,7 +44,7 @@ The system provides both:
 # Screenshots
 
 # Main Pages
-![Admin Main](screenshots/admin-main.png)  
+![Admin Main](screenshots/admin_main.png)  
 ![Dashboard](screenshots/dashboard.png)  
 ![Products](screenshots/products.png)  
 
@@ -52,8 +52,8 @@ The system provides both:
 
 # Cart & Orders
 ![Cart](screenshots/cart.png)  
-![Request Complete](screenshots/request-complete.png)  
-![Request Sure](screenshots/request-sure.png)  
+![Request Complete](screenshots/request_complete.png)  
+![Request Sure](screenshots/request_sure.png)  
 
 ---
 
@@ -61,15 +61,15 @@ The system provides both:
 ![Admin Login](screenshots/admin_login.png)  
 ![Add Category](screenshots/add_category.png)  
 ![Add Product](screenshots/add_product.png)  
-![Add Product 2](screenshots/add_product-2.png)  
+![Add Product 2](screenshots/add_product_2.png)  
 ![Users](screenshots/users.png)  
 ![Requests](screenshots/requests.png)  
 
 ---
 
 # Authentication
-![Sign In](screenshots/sign-in.png)  
-![Sign Up](screenshots/sign-up.png)  
+![Sign In](screenshots/sign_in.png)  
+![Sign Up](screenshots/sign_up.png)  
 
 ---
 
