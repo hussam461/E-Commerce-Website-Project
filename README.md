@@ -58,10 +58,10 @@ The system provides both:
 ---
 
 # Admin Panel
-![Admin Login](screenshots/admin-login.png)  
-![Add Category](screenshots/add-category.png)  
-![Add Product](screenshots/add-product.png)  
-![Add Product 2](screenshots/add-product-2.png)  
+![Admin Login](screenshots/admin_login.png)  
+![Add Category](screenshots/add_category.png)  
+![Add Product](screenshots/add_product.png)  
+![Add Product 2](screenshots/add_product-2.png)  
 ![Users](screenshots/users.png)  
 ![Requests](screenshots/requests.png)  
 
