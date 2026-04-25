@@ -1,0 +1,440 @@
+/* خلفية الصفحة العامة */
+.login-body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    background: radial-gradient(circle at top, #1f2937 0, #020617 55%, #000 100%);
+    color: #111827;
+}
+
+/* تغليف الكل في المنتصف */
+.login-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+
+/* الكرت الأساسي */
+.login-card {
+    background: rgba(255, 255, 255, 0.97);
+    max-width: 420px;
+    width: 100%;
+    border-radius: 18px;
+    padding: 28px 24px 24px;
+    box-shadow:
+        0 20px 45px rgba(15, 23, 42, 0.45),
+        0 0 0 1px rgba(148, 163, 184, 0.15);
+    backdrop-filter: blur(6px);
+}
+
+/* رأس الكرت */
+.login-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-header h1 {
+    margin: 8px 0 4px;
+    font-size: 1.4rem;
+    color: #0f172a;
+}
+
+.login-header p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
+/* دائرة شعار بسيطة */
+.logo-circle {
+    width: 54px;
+    height: 54px;
+    margin: 0 auto;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: #f9fafb;
+    font-weight: 700;
+    font-size: 1.3rem;
+    box-shadow: 0 12px 25px rgba(37, 99, 235, 0.6);
+}
+
+/* تنسيقات الفورم */
+.login-form {
+    margin-top: 8px;
+}
+
+.form-group {
+    margin-bottom: 14px;
+    text-align: right;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    color: oklab(96.396% -0.00027 -0.00297);
+}
+
+/* الحقول */
+.form-group input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid #d1d5db;
+    font-size: 0.95rem;
+    outline: none;
+    background-color: #f9fafb;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+
+.form-group input:focus {
+    border-color: #2563eb;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.3);
+}
+
+/* زر الدخول */
+.btn-primary {
+    width: 100%;
+    padding: 11px 14px;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.98rem;
+    font-weight: 600;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: #f9fafb;
+    margin-top: 6px;
+    box-shadow: 0 14px 30px rgba(37, 99, 235, 0.55);
+    transition: transform 0.12s ease, box-shadow 0.12s ease, opacity 0.12s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 18px 40px rgba(37, 99, 235, 0.7);
+    opacity: 0.97;
+}
+
+.btn-primary:active {
+    transform: translateY(1px);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.5);
+}
+
+/* رسالة تحت الزر */
+.login-hint {
+    margin-top: 10px;
+    font-size: 0.8rem;
+    color: #9ca3af;
+    text-align: center;
+}
+
+/* رسائل الخطأ */
+.alert {
+    padding: 10px 12px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    font-size: 0.88rem;
+}
+
+.alert-error {
+    background-color: #fef2f2;
+    color: #b91c1c;
+    border: 1px solid #fecaca;
+}
+
+/* الفوتر */
+.login-footer {
+    margin-top: 16px;
+    font-size: 0.8rem;
+    color: #9ca3af;
+    text-align: center;
+}
+
+/* للجوال */
+@media (max-width: 480px) {
+    .login-card {
+        padding: 22px 18px 20px;
+    }
+
+    .login-header h1 {
+        font-size: 1.2rem;
+    }
+}
+
+
+
+
+
+
+/*  ولوحة التحكم */
+.dashboard-body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    background-color: #0b1120;
+    color: #e5e7eb;
+}
+
+.dashboard-layout {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    min-height: 100vh;
+}
+
+/* الشريط الجانبي */
+.sidebar {
+    background: radial-gradient(circle at top, #020617 0, #020617 55%, #020617 100%);
+    border-inline-end: 1px solid rgba(148, 163, 184, 0.3);
+    padding: 20px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f9fafb;
+    font-weight: 700;
+    box-shadow: 0 12px 25px rgba(37, 99, 235, 0.6);
+}
+
+.sidebar-header h2 {
+    margin: 0;
+    font-size: 1rem;
+    color: #e5e7eb;
+}
+
+.sidebar-header p {
+    margin: 2px 0 0;
+    font-size: 0.8rem;
+    color: #9ca3af;
+}
+
+/* الروابط في الشريط الجانبي */
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 10px;
+}
+
+.nav-link {
+    display: block;
+    text-decoration: none;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    color: #e5e7eb;
+    transition: background-color 0.15s ease, color 0.15s ease, transform 0.1s ease;
+}
+
+.nav-link:hover {
+    background-color: rgba(148, 163, 184, 0.2);
+    transform: translateX(-2px);
+}
+
+.nav-link.active {
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    box-shadow: 0 12px 25px rgba(37, 99, 235, 0.55);
+}
+
+.logout-link {
+    margin-top: auto;
+    color: #7b0d0d;
+}
+
+.logout-link:hover {
+    background-color: rgba(81, 13, 230, 0.1);
+}
+
+/* محتوى الداشبورد */
+.dashboard-main {
+    padding: 24px 26px;
+}
+
+.dashboard-header h1 {
+    margin: 0 0 6px;
+    font-size: 1.4rem;
+    color: #f9fafb;
+}
+
+.dashboard-header p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #9ca3af;
+}
+
+/* الكروت */
+.dashboard-cards {
+    margin-top: 22px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 14px;
+}
+
+.dash-card {
+    background: radial-gradient(circle at top left, #1f2937 0, #020617 60%);
+    border-radius: 16px;
+    padding: 14px 14px 12px;
+    border: 1px solid rgba(148, 163, 184, 0.35);
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.7);
+}
+
+.dash-card h3 {
+    margin: 0 0 6px;
+    font-size: 0.95rem;
+    color: #e5e7eb;
+}
+
+.dash-number {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #facc15;
+}
+
+.dash-note {
+    margin-top: 4px;
+    display: inline-block;
+    font-size: 0.75rem;
+    color: #9ca3af;
+}
+
+/* دايناميك للجوال */
+@media (max-width: 768px) {
+    .dashboard-layout {
+        grid-template-columns: 1fr;
+    }
+    .sidebar {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-inline: 14px;
+    }
+    .sidebar-nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 4px;
+        margin-top: 0;
+    }
+    .logout-link {
+        margin-top: 0;
+        color: #4b1cb9;
+    }
+}
+
+
+
+
+
+
+/*جدول عرض التصنيفات*/
+
+.wide {
+    grid-column: 1 / -1;/*الامتداد من او لعمود الى اخر عمود مهما كان رقمه*/
+
+}
+
+.cat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.small-btn {
+    width: auto !important;
+    padding-inline: 18px !important;
+    padding-block: 9px !important;
+    text-decoration: none !important;
+    font-size: 0.9rem !important;
+}
+
+/* جدول التصنيفات */
+.cat-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    background: rgba(255,255,255,0.03);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.cat-table thead {
+    background: rgba(148,163,184,0.15);
+}
+
+.cat-table th {
+    text-align: right;
+    padding: 10px;
+    font-weight: 600;
+    color: #e5e7eb;
+}
+
+.cat-table td {
+    text-align: right;
+    padding: 10px;
+    color: #d1d5db;
+    border-bottom: 1px solid rgba(55,65,81,0.35);
+}
+
+.cat-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* صورة التصنيف */
+.cat-image {
+    height: 40px;
+    width: 40px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+/* روابط تعديل / حذف */
+/* روابط عمليات الجدول (تعديل – حذف – عرض) */
+.table-link {
+    color: #3498db;              
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 6px;
+    transition: 0.2s ease;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.table-link:hover {
+    color: #1d6fa5;
+    text-decoration: underline;
+}
+
+/* تنسيق خاص برابط الحذف */
+.table-link.delete {
+    color: #e74c3c;              /* أحمر */
+}
+
+.table-link.delete:hover {
+    color: #c0392b;
+    text-decoration: underline;
+}
+
+
+
